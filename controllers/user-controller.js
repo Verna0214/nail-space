@@ -1,17 +1,18 @@
 const bcrypt = require('bcryptjs')
 const db = require('../models')
+const CustomError = require('../middleware/custom-error')
 const { User } = db
 
 const userController = {
-  signUp: async (req, res) => {
+  signUp: async (req, res, next) => {
     try {
       const { name, nickName, email, password, tel, lineId } = req.body
       if (!name || !email || !password || !tel) {
-        return res.status(400).json({ status: 'error', error: '名字、信箱、密碼、電話欄位不得空白！' })
+        throw new CustomError('名字、信箱、密碼、電話欄位不得空白！', 400)
       }
       let user = await User.findOne({ where: { email } })
       if (user) {
-        return res.status(400).json({ status: 'error', error: '使用者已註冊！' })
+        throw new CustomError('使用者已註冊！', 400)
       }
       user = await User.create({
         name,
@@ -23,7 +24,7 @@ const userController = {
       })
       return res.status(200).json({ status: 'success', user })
     } catch (err) {
-      return res.status(500).json({ error: 'error', err })
+      next(err)
     }
   }
 }
