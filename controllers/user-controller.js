@@ -1,3 +1,4 @@
+const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 const db = require('../models')
 const CustomError = require('../middleware/custom-error')
@@ -23,6 +24,22 @@ const userController = {
         lineId
       })
       return res.status(200).json({ status: 'success', user })
+    } catch (err) {
+      next(err)
+    }
+  },
+  signIn: (req, res, next) => {
+    try {
+      const user = req.user.toJSON()
+      delete user.password
+      const token = jwt.sign(user, process.env.JWT_SECRET, { expiresIn: '30d' })
+      return res.status(200).json({
+        status: 'success',
+        data: {
+          token,
+          user
+        } 
+      })
     } catch (err) {
       next(err)
     }
