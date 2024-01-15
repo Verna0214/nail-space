@@ -11,7 +11,11 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Reservation.belongsTo(models.User, { foreignKey: 'userId' }),
-      Reservation.hasMany(models.Order, { foreignKey: 'reservationId' })
+      Reservation.belongsToMany(models.Item, {
+        through: models.Order,
+        foreignKey: 'reservationId',
+        as: 'ReservedDetails'
+      })
     }
   }
   Reservation.init({
