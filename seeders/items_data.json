@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "name": "單色",
+      "price": 900,
+      "serviceId": "沾粉指甲(手部)"
+    },
+    {
+      "name": "法式",
+      "price": 1100,
+      "serviceId": "沾粉指甲(手部)"
+    },
+    {
+      "name": "漸層/璀璨",
+      "price": 1200,
+      "serviceId": "沾粉指甲(手部)"
+    },
+    {
+      "name": "延長",
+      "price": 500,
+      "serviceId": "沾粉指甲(手部)"
+    },
+    {
+      "name": "沾粉/水晶卸甲",
+      "price": 400,
+      "serviceId": "沾粉指甲(手部)"
+    },
+    {
+      "name": "斷、裂甲修補/指",
+      "price": 100,
+      "serviceId": "沾粉指甲(手部)"
+    },
+    {
+      "name": "跳色/色",
+      "price": 80,
+      "serviceId": "PLUS造型指甲"
+    },
+    {
+      "name": "特殊甲型",
+      "price": 100,
+      "serviceId": "PLUS造型指甲"
+    },
+    {
+      "name": "霧面上層",
+      "price": 100,
+      "serviceId": "PLUS造型指甲"
+    },
+    {
+      "name": "貓眼、鏡面粉",
+      "price": 200,
+      "serviceId": "PLUS造型指甲"
+    },
+    {
+      "name": "薄型凝膠單色(手)",
+      "price": 400,
+      "serviceId": "凝膠指甲"
+    },
+    {
+      "name": "薄型凝膠單色(足)",
+      "price": 500,
+      "serviceId": "凝膠指甲"
+    },
+    {
+      "name": "凝膠加厚(足)",
+      "price": 300,
+      "serviceId": "凝膠指甲"
+    },
+    {
+      "name": "薄型凝膠卸甲重做",
+      "price": 100,
+      "serviceId": "凝膠指甲"
+    },
+    {
+      "name": "薄型凝膠卸甲",
+      "price": 200,
+      "serviceId": "凝膠指甲"
+    },
+    {
+      "name": "凝膠卸甲重做",
+      "price": 200,
+      "serviceId": "凝膠指甲"
+    },
+    {
+      "name": "凝膠卸甲",
+      "price": 300,
+      "serviceId": "凝膠指甲"
+    },
+    {
+      "name": "手部基礎保養",
+      "price": 300,
+      "serviceId": "手足護理"
+    },
+    {
+      "name": "足部基礎保養",
+      "price": 400,
+      "serviceId": "手足護理"
+    },
+    {
+      "name": "足部深層保養",
+      "price": 800,
+      "serviceId": "手足護理"
+    },
+    {
+      "name": "足部奢華保養",
+      "price": 1200,
+      "serviceId": "手足護理"
+    },
+    {
+      "name": "指甲修型",
+      "price": 150,
+      "serviceId": "手足護理"
+    },
+    {
+      "name": "眉毛",
+      "price": 400,
+      "serviceId": "熱蠟除毛(臉部)"
+    },
+    {
+      "name": "上唇小鬍子",
+      "price": 300,
+      "serviceId": "熱蠟除毛(臉部)"
+    },
+    {
+      "name": "腋下",
+      "price": 600,
+      "serviceId": "熱蠟除毛(身體)"
+    },
+    {
+      "name": "下手臂",
+      "price": 800,
+      "serviceId": "熱蠟除毛(身體)"
+    },
+    {
+      "name": "全手臂",
+      "price": 1100,
+      "serviceId": "熱蠟除毛(身體)"
+    },
+    {
+      "name": "小腿",
+      "price": 1000,
+      "serviceId": "熱蠟除毛(身體)"
+    },
+    {
+      "name": "全腿",
+      "price": 1500,
+      "serviceId": "熱蠟除毛(身體)"
+    }
+  ]
+}
