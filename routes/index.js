@@ -9,6 +9,7 @@ const serviceController = require('../controllers/service-controller')
 
 router.post('/api/users/signin', passport.authenticate('local', { session: false }), userController.signIn)
 router.post('/api/users/signup', userController.signUp)
+router.get('/api/reservation', authenticated, serviceController.getReservation)
 router.post('/api/reservation', authenticated, serviceController.postReservation)
 router.get('/', (req, res) => res.send('Hello, world!'))
 router.use('/', apiErrorHandler)
