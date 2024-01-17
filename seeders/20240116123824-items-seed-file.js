@@ -10,7 +10,6 @@ module.exports = {
     )
     await queryInterface.bulkInsert('Items', itemsData.map(item => {
       const serviceMatch = services.find(service => service.name === item.service_id)
-      console.log(serviceMatch)
       return {
         ...item,
         service_id: serviceMatch.id,

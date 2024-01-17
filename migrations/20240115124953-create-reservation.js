@@ -22,6 +22,10 @@ module.exports = {
         type: Sequelize.STRING,
         defaultValue: 'Pending'
       },
+      user_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER
+      },
       created_at: {
         allowNull: false,
         type: Sequelize.DATE

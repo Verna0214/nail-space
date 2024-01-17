@@ -21,7 +21,8 @@ module.exports = (sequelize, DataTypes) => {
   Reservation.init({
     date: DataTypes.DATEONLY,
     time: DataTypes.TIME,
-    status: DataTypes.STRING
+    status: DataTypes.STRING,
+    userId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Reservation',
